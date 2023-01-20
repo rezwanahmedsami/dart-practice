@@ -54,6 +54,30 @@ class SixthClass extends FirstClass {
   }
 }
 
+// Abstract class and Abstract method
+// what is abstract class?
+// Abstract class is a class that can not be instantiated.
+abstract class SeventhClass {
+  void show();
+}
+
+// implicit interface
+// what is implicit interface?
+// Implicit interface is a class that can not be instantiated.
+class EighthClass implements SeventhClass {
+  @override
+  void show() {
+    print("EighthClass show method");
+  }
+}
+
+// class with generic type
+class NinthClass<T> {
+  T name;
+  T age;
+  NinthClass(this.name, this.age);
+}
+
 void main(List<String> args) {
   var firstClass = FirstClass("John", 20);
   firstClass.show();
