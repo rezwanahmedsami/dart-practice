@@ -1,3 +1,5 @@
+import 'dart:js_util';
+
 void main() {
   print(multiplication(12, 2));
   print(multiplication(4, 20));
@@ -7,6 +9,17 @@ void main() {
   printNumbers(10, number2: 20);
   printNumbers(50);
   printNumbers2(50, 45);
+
+  // annonymus function
+  var add = (int one, int two) {
+    return one + two;
+  };
+
+  add(2, 4);
+
+  // arrow function
+  var add2 = (int one, int two) => one + two;
+  add2(2, 4);
 }
 
 int multiplication(int one, int two) {

@@ -45,4 +45,16 @@ void main() {
   // set is a collection of objects of same type
   Set<String> names10 = {"Dart", "Java", "Python", "C++"};
   print(names10);
+
+  // Empty set
+  Set<String> names11 = {};
+  print(names11);
+
+  // add item to empty set
+  Set<String> names12 = {};
+  names12.add("Dart");
+  names12.add("Java");
+  names12.add("Python");
+  names12.add("C++");
+  print(names12);
 }
